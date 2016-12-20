@@ -1,0 +1,175 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/*不允许对页面文本进行选择*/
+body{
+	behavior:url("ie-css3.htc"); 
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+/*居中*/
+.container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -300px;
+	margin-top: -370px;
+}
+ul{
+	font-size: 0;
+}
+/*计算器大小*/
+#counter{
+	width: 600px;
+	height: 740px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	background: url(../img/btn0.jpg) no-repeat;
+	background-size: 600px 740px;
+	box-shadow: 5px 5px 15px 6px rgba(0,0,0,.8);
+}
+/*显示屏大小以及样式*/
+.screen{
+	width: 560px;
+    height: 160px;
+    *width: 540px;
+    _width: 540px;
+    *height: 100px;
+    _height: 100px;
+    border: none;
+    font-size: 80px;
+    background: rgb(252,253,234);
+    color: #444;
+    color /*\**/:#444\9;
+    _color: #444;
+    +color: #444;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 50px 10px 10px 10px;
+    *position: relative;
+    *top: -1px;
+    border: 1px solid #999;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 4px 1px rgba(0,0,0,.8);
+
+}
+/*按钮组大小及样式*/
+#btnGrpup{
+	width: 600px;
+	height: 550px;
+	box-sizing: border-box;
+	*position: relative;
+    *top: -2px;
+    position: relative;
+}
+#counter li{
+	width: 100px;
+	height: 60px;
+	*width: 99px;
+	*height: 59px;
+	_width: 99px;
+	_height: 59px;
+	display: inline-block;
+	float: left;
+	box-sizing: border-box;
+	line-height: 60px;
+	text-align: center;
+	font-size: 30px;
+	background: url(../img/btn.png) no-repeat;
+	background-size: 100px 60px;
+	_background: #eee\9;
+	*background: #eee\9;
+	background/*\**/:#eee\9;
+	cursor: pointer;
+	border-radius: 5px;
+	color: #000;
+	font-weight: bold;
+	outline: none;
+	border: 1px solid transparent;
+	margin: 8px 0;
+	margin-right: 15px;
+}
+
+#counter li.clean{
+	width: 215px;
+	height: 60px;
+	*width: 214px;
+	*height: 59px;
+	_width: 214px;
+	_height: 59px;
+	background-size: 214px 60px;
+}
+#counter li.zero{
+	width: 215px;
+	height: 60px;
+	*width: 214px;
+	*height: 59px;
+	_width: 214px;
+	_height: 59px;
+	background-size: 214px 60px;
+}
+#counter li.equal{
+	width: 560px;
+	height: 120px;
+	*width: 559px;
+	*height: 120px;
+	_width: 559px;
+	_height: 120px;
+	background-size: 560px 120px;
+	line-height: 120px;
+	background: url(../img/btn6.png) no-repeat;
+	background-size: 560px 120px;
+	_background: #000\9;
+	*background: #000\9;
+	background/*\**/:#000\9;
+	position: absolute;
+	bottom: 20px;
+	_bottom: 26px;
+	*bottom: 26px;
+	bottom/*\**/:26px\9;
+    right: 5px;
+    border-radius: 5px;
+}
+#counter li:nth-child(1),
+#counter li:nth-child(5),
+#counter li:nth-child(10),
+#counter li:nth-child(15),
+#counter li:nth-child(20){
+	margin-left: 20px;
+}
+#counter .mlfet{
+	margin-left: 20px;
+}
+#counter li:nth-child(1),
+#counter li:nth-child(2),
+#counter li:nth-child(3),
+#counter li:nth-child(4){
+	margin-top: 15px;
+}
+#counter li:nth-child(20),
+#counter li:nth-child(21),
+#counter li:nth-child(22),
+#counter li:nth-child(23){
+	margin-bottom: 20px;
+}
+#counter .iconfont{
+	background: url(../img/btn4.png) no-repeat;
+	background-size: 100px 60px;
+	_background: #000\9;
+	*background: #000\9;
+	background/*\**/:#000\9;
+	color: #FFFFFF;
+	 color /*\**/:#FFFFFF\9;
+    _color: #FFFFFF;
+    +color: #FFFFFF;
+}
+
+
+/*按钮被按下时的样式*/
+#counter #btnGrpup>li:active{
+	box-shadow:inset 50px 50px 50px 50px rgba(0,0,0,.15);
+}
